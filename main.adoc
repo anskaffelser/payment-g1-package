@@ -1,0 +1,15 @@
+:path: files/
+
+include::README.adoc[lines=1..15]
+
+:leveloffset: +1
+
+include::steps/step_1.adoc[lines=2..-1]
+
+include::steps/step_2.adoc[lines=2..-1]
+
+include::steps/step_3.adoc[lines=2..-1]
+
+include::steps/step_4.adoc[lines=2..-1]
+
+include::steps/step_5.adoc[lines=2..-1]

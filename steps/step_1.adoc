@@ -1,0 +1,27 @@
+:path: ../files/
+
+= Step 1 - Create ISO 20022 document [[s1]]
+
+
+== Files [[s1-files]]
+
+* link:{path}pain001.xml[pain001.xml] - Financial document to be secured.
+
+
+== Documentation [[s1-doc]]
+
+In this step is an example file from Bits used for the sake of completenes. The ISO 20022 document is not changed in any way. Implementations out here will use their own content.
+
+
+== References [[s1-ref]]
+
+link:http://bits.no/[Bits] is responsible for standardization of ISO 20022 financial document types in Norway.
+
+
+== Changelog [[s1-changelog]]
+
+[cols="1,4", options="header"]
+|===
+| Date | Description
+| 2017-05-11 | Initial version.
+|===

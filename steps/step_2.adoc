@@ -1,0 +1,50 @@
+:path: ../files/
+
+= Step 2 - Create inner ASiC [[s2]]
+
+
+== Files [[s2-files]]
+
+* link:{path}iso20022-inner.asice[iso20022-inner.asice] - Generated ASiC containing ISO 20022 document.
+* link:{path}keystore.jks[keystore.jks] - Key store containing key pair and dummy certificate as replacement for business certificate.
+
+
+== Documentation [[s2-doc]]
+
+
+=== Technical specification
+
+[cols="1,1,1", options="header"]
+|===
+| Specification | Read | Write
+| Type of ASiC | ASiC-E | ASiC-E
+| Type of signature | CAdES |CAdES
+| Hashing of content | SHA-256 | SHA-256
+| Hashing of manifest | SHA-256 | SHA-256
+|===
+
+
+=== Content of `inner-asic.asice`
+
+* `mimetype` - According to ASiC standard
+* `content.xml` - Signed content
+* `META-INF/ASiCManifest*.xml` - ASiC manifest
+* `META-INF/\*signature*.p7s` - Signature
+
+
+// === Multiple signatures
+
+
+== References [[s2-ref]]
+
+* link:http://www.etsi.org/deliver/etsi_ts/102900_102999/102918/01.03.01_60/ts_102918v010301p.pdf[ETSI TS 102 918 V1.3.1 - Associated Signature Containers (ASiC)]
+* link:http://wiki.ds.unipi.gr/display/ESENS/PR+-+eSENS+Container[eSENS Container] (informal)
+
+
+== Changelog [[s2-changelog]]
+
+[cols="1,4", options="header"]
+|===
+| Date | Description
+| 2017-05-11 | Initial version.
+|===

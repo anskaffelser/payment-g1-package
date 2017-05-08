@@ -1,0 +1,65 @@
+:path: ../files/
+
+= Step 4 - Create outer ASiC [[s4]]
+
+
+== Files [[s4-files]]
+
+* link:{path}iso20022-outer.asice[iso20022-outer.asice] - Generated ASiC containing encrypted inner ASiC.
+
+Key store used in step 2 is reused in this step for both integrity and confidenciality.
+
+
+== Documentation [[s4-doc]]
+
+
+=== Technical specification
+
+[cols="1,1,1", options="header"]
+|===
+| Specification | Read | Write
+| Encryption | AES256-GCM | AES256-GCM
+|===
+
+Please see the technical specifications part of step 2 for complete technical specification in this step.
+
+
+=== Encrypted content
+
+Method::
+For encryption is CMS used. Encryption using XML Encryption is not allowed.
+
+Prefix/Location::
+Encryptet files may be found as part of the ordinary structure of the ASiC-E files, however a change to prefix encryptet content with `META-INF/EncrptedDataObject/` in addition to postfix is expected.
+
+Postfix/Extension::
+Files encryptet using CMS is postfixed `.p7m`.
+
+Mime type::
+In the ASiC-E manifest is the mime type of the source content used, not mime type of the encryption method used.
+
+Manifest::
+Hash for ASiC-E manifest of encrypted content is generated *after* encryption. This allows to validate the integrity of ASiC-E without having to decrypt content.
+
+
+=== Content of `outer-asic.asice`
+
+* `mimetype` - According to ASiC standard
+* `sbdh.xml` - Inner SBDH
+* `content.asice.p7m` - Encrypted inner ASiC
+* `META-INF/ASiCManifest*.xml` - ASiC manifest
+* `META-INF/\*signature*.p7s` - Signature
+
+
+== References [[s4-ref]]
+
+See *step 2* for references.
+
+
+== Changelog [[s4-changelog]]
+
+[cols="1,4", options="header"]
+|===
+| Date | Description
+| 2017-05-11 | Initial version.
+|===
