@@ -14,6 +14,7 @@ This project is created to make available the individual steps performed to pack
 Only aspects needed to be coordinated or are specific to packaging of ISO 20022 documents are descibed here. Familiarity to referenced documentation is expected.
 
 * link:steps/step_1.adoc[Step 1 - Create ISO 20022 document]
+* link:steps/step_2.adoc[Step 2 - Create metadata document]
 * link:steps/step_2.adoc[Step 2 - Create inner ASiC]
 * link:steps/step_3.adoc[Step 3 - Create inner SBDH]
 * link:steps/step_4.adoc[Step 4 - Create outer ASiC]

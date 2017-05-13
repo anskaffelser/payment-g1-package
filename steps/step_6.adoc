@@ -1,0 +1,54 @@
+:path: ../files/
+
+= Step 5 - Create outer SBD(H) [[s6]]
+
+
+== Files [[s6-files]]
+
+* link:{path}peppol-envelope-extension-1_0.xsd[peppol-envelope-extension-1_0.xsd] OpenPEPPOL New Payload XSD
+* link:{path}sbd.xml[sbd.xml] - Standard Business Document (Header) (Outer SBD(H))
+
+
+== Documentation [[s6-doc]]
+
+The SBD(H) contains this structure:
+
+.SBD(H) structure
+----
+StandardBusinessDocument
++-- StandardBusinessDocumentHeader
++-- [Payload]
+----
+
+
+=== Inserting inner SBDH
+
+The inner SBDH created as part of *step 3* is inserted in the location of StandardBusinessDocumentHeader. The SBDH inserted must be identical to the one signed as part of outer ASiC.
+
+
+=== Inserting Payload
+
+The outer ASiC is inserted as payload by wrapping the content in the BinaryContent element provided by the OpenPEPPOL New Payload XSD.
+
+[cols="1,3", options="header"]
+.Use of BinaryContent element
+|===
+| Field     | Value
+| @mimeType | application/vnd.etsi.asic-e+zip
+| @encoding | UTF-8
+| value     | Outer ASiC
+|===
+
+
+== References [[s6-ref]]
+
+See *step 3* for references.
+
+
+== Changelog [[s6-changelog]]
+
+[cols="1,4", options="header"]
+|===
+| Date | Description
+| 2017-05-11 | Initial version.
+|===
