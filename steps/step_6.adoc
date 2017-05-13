@@ -42,7 +42,7 @@ The outer ASiC is inserted as payload by wrapping the content in the BinaryConte
 
 == References [[s6-ref]]
 
-See *step 3* for references.
+See *step 4* for references.
 
 
 == Changelog [[s6-changelog]]

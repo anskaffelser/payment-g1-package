@@ -7,7 +7,7 @@
 
 * link:{path}iso20022-outer.asice[iso20022-outer.asice] - Generated ASiC containing encrypted inner ASiC.
 
-Key store used in step 2 is reused in this step for both integrity and confidenciality.
+Key store used in step 3 is reused in this step for both integrity and confidenciality.
 
 
 == Documentation [[s5-doc]]
@@ -21,7 +21,7 @@ Key store used in step 2 is reused in this step for both integrity and confidenc
 | Encryption | AES256-GCM | AES256-GCM
 |===
 
-Please see the technical specifications part of step 2 for complete technical specification in this step.
+Please see the technical specifications part of step 3 for complete technical specification in this step.
 
 
 === Encrypted content
@@ -53,7 +53,7 @@ Hash for ASiC-E manifest of encrypted content is generated *after* encryption. T
 
 == References [[s5-ref]]
 
-See *step 2* for references.
+See *step 3* for references.
 
 
 == Changelog [[s5-changelog]]
