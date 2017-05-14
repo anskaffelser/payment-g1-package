@@ -24,4 +24,5 @@ Steps on the sending side:
 
 Steps on the receiving side:
 
-* link:steps/step_7.adoc[Step 7 - Create reception acknowledgement]
+* link:steps/step_7.adoc[Step 7 - Create reception acknowledgement message]
+* link:steps/step_8.adoc[Step 8 - Create handling exception message]

@@ -17,3 +17,5 @@ include::steps/step_5.adoc[lines=2..-1]
 include::steps/step_6.adoc[lines=2..-1]
 
 include::steps/step_7.adoc[lines=2..-1]
+
+include::steps/step_8.adoc[lines=2..-1]
