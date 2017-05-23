@@ -18,7 +18,7 @@ Document defined by Payment Extras to transport accompanying information with th
 ----
 Metadata
 +-- Version
-+-- SenderIdentifier
++-- CustomerIdentifier
 +-- DivisionIdentifier
 +-- UserIdentifier
 ----
@@ -37,4 +37,5 @@ Further information about mandatory fields and use may be found in the specifica
 |===
 | Date | Description
 | 2017-05-13 | Initial version.
+| 2017-05-23 | Changeing "SenderIdentifier" to "CustomerIdentifier".
 |===
