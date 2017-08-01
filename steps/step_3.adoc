@@ -27,7 +27,7 @@
 === Content of `inner-asic.asice`
 
 * `mimetype` - According to ASiC standard
-* `manifest.xml` - Manifest document
+* `metadata.xml` - Metadata document
 * `content.xml` - ISO 20022 document
 * `META-INF/ASiCManifest*.xml` - ASiC manifest
 * `META-INF/\*signature*.p7s` - Signature
