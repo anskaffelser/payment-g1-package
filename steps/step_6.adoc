@@ -40,6 +40,14 @@ The outer ASiC is inserted as payload by wrapping the content in the BinaryConte
 |===
 
 
+== Error handling [[s6-error]]
+
+
+=== Case: Inner SBDH and outer SBDH do not match.
+
+In the case of receiving a transmission where inner SBDH and outer SBDH do not match must a RC4b be returned to the sender. When SBDH is embedded in RC4b must the inner SBDH be used. (The inner SBDH is the only SBDH we know for sure the sender is familiar with.)
+
+
 == References [[s6-ref]]
 
 See *step 4* for references.
@@ -51,4 +59,5 @@ See *step 4* for references.
 |===
 | Date | Description
 | 2017-05-11 | Initial version.
+| 2017-08-28 | Adding description of error handling when inner SBDH and outer SBDH doesn't match.
 |===
