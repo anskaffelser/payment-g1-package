@@ -1,6 +1,6 @@
 :path: ../files/
 
-= Step 3 - Create inner SBDH [[s4]]
+= Step 4 - Create inner SBDH [[s4]]
 
 
 == Files [[s4-files]]

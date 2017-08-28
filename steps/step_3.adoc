@@ -1,6 +1,6 @@
 :path: ../files/
 
-= Step 2 - Create inner ASiC [[s3]]
+= Step 3 - Create inner ASiC [[s3]]
 
 
 == Files [[s3-files]]
@@ -48,5 +48,5 @@
 |===
 | Date | Description
 | 2017-05-11 | Initial version.
-| 2017-05-13 | Update to reflect inclusion of manifest document.
+| 2017-05-13 | Update to reflect inclusion of metadata document.
 |===

@@ -1,6 +1,6 @@
 :path: ../files/
 
-= Step 5 - Create outer SBD(H) [[s6]]
+= Step 6 - Create outer SBD(H) [[s6]]
 
 
 == Files [[s6-files]]

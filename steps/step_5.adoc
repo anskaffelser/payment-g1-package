@@ -1,6 +1,6 @@
 :path: ../files/
 
-= Step 4 - Create outer ASiC [[s5]]
+= Step 5 - Create outer ASiC [[s5]]
 
 
 == Files [[s5-files]]
