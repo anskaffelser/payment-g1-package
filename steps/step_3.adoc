@@ -6,6 +6,7 @@
 == Files [[s3-files]]
 
 * link:{path}iso20022-inner.asice[iso20022-inner.asice] - Generated ASiC containing ISO 20022 document.
+* link:{path}iso20022-inner-multisign.asice[iso20022-inner-multisign.asice] - Generated ASiC containing ISO 20022 document signed using two certificates.
 * link:{path}keystore.jks[keystore.jks] - Key store containing key pair and dummy certificate as replacement for business certificate.
 
 
@@ -33,7 +34,11 @@
 * `META-INF/\*signature*.p7s` - Signature
 
 
-// === Multiple signatures
+=== Multiple signatures
+
+In the case of multiple signatures are the amount of files containing ASiC manifest and signature multiplied according to the amount of signatures.
+
+Please see ETSI TS 102 918 6.3.2 for illustration of multiple signatures.
 
 
 == References [[s3-ref]]
